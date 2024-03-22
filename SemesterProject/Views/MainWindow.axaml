@@ -86,7 +86,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="2">
-						<Button Click="ClickButton2" Classes="Style1">
+						<Button Click="OpenProductionValues" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Production" HorizontalAlignment="Center"/>
 								<TextBlock Text="Values" HorizontalAlignment="Center"/>
@@ -94,14 +94,14 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="3">
-						<Button Click="ClickButton3" Classes="Style1">
+						<Button Click="OpenConsumption" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Consumption" HorizontalAlignment="Center"/>
 							</StackPanel>
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="4">
-						<Button Click="ClickButton4" Classes="Style1">
+						<Button Click="OpenElectricityPrices" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Electricity" HorizontalAlignment="Center"/>
 								<TextBlock Text="prices" HorizontalAlignment="Center"/>
@@ -109,7 +109,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="5">
-						<Button Click="ClickButton5" Classes="Style1">
+						<Button Click="OpenConsumptionOfPrimaryEnergy" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Consumption" HorizontalAlignment="Center"/>
 								<TextBlock Text="of primary" HorizontalAlignment="Center"/>
@@ -118,7 +118,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="1" Grid.Column="1">
-						<Button Click="ClickButton6" Classes="Style1">
+						<Button Click="OpenHeatProduction" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Heat" HorizontalAlignment="Center"/>
 								<TextBlock Text="Production" HorizontalAlignment="Center"/>
@@ -126,7 +126,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="2" Grid.Column="1">
-						<Button Click="ClickButton7" Classes="Style1">
+						<Button Click="OpenProductionUits" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Production" HorizontalAlignment="Center"/>
 								<TextBlock Text="Units" HorizontalAlignment="Center"/>
@@ -134,7 +134,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="3" Grid.Column="1">
-						<Button Click="ClickButton8" Classes="Style1">
+						<Button Click="OpenCO2Emmisions" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="CO2" HorizontalAlignment="Center"/>
 								<TextBlock Text="Emmisions" HorizontalAlignment="Center"/>
@@ -142,7 +142,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="4" Grid.Column="1" >
-						<Button Click="ClickButton9" Classes="Style1">
+						<Button Click="OpenExpensesAndProfit" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Expenses" HorizontalAlignment="Center"/>
 								<TextBlock Text="and profit" HorizontalAlignment="Center"/>
@@ -150,7 +150,7 @@
 						</Button>
 					</StackPanel>
 					<StackPanel Grid.Row="5" Grid.Column="1" >
-						<Button Click="ClickButton10" Classes="Style1">
+						<Button Click="OpenPrioritiesOfProductionUnits" Classes="Style1">
 							<StackPanel>
 								<TextBlock Text="Priorities of" HorizontalAlignment="Center"/>
 								<TextBlock Text="production" HorizontalAlignment="Center"/>
