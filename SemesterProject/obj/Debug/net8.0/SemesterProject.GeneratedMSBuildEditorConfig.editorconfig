@@ -13,15 +13,15 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SemesterProject
-build_property.ProjectDir = C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\SemesterProject\
+build_property.ProjectDir = C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\semesterproject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/SemesterProject/App.axaml]
+[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/semesterproject/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/SemesterProject/HeatDemand/HeatDemandWindow.axaml]
+[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/semesterproject/HeatDemand/HeatDemandWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/SemesterProject/Views/MainWindow.axaml]
+[C:/Users/asus/OneDrive/Desktop/carti/Sem2/SP/SemesterProjectSem2/semesterproject/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

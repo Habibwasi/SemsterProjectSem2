@@ -83,7 +83,7 @@
 					</Grid>
                                 </Border>
                                 <Border Background="DarkGray" CornerRadius="10" Grid.Row="2" Grid.Column="3" Margin="10">
-                                        <Grid ShowGridLines="True">
+                                        <Grid ShowGridLines="False">
 					        <Grid.ColumnDefinitions>
 							<ColumnDefinition Width="*" />
 							<ColumnDefinition Width="*" />

@@ -129,3 +129,4 @@ C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\SemesterProject
 C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\SemesterProject\obj\Debug\net8.0\Semester.6E7620CB.Up2Date
 C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\SemesterProject\obj\Debug\net8.0\SemesterProject.genruntimeconfig.cache
 C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\SemesterProject\obj\Debug\net8.0\ref\SemesterProject.dll
+C:\Users\asus\OneDrive\Desktop\carti\Sem2\SP\SemesterProjectSem2\semesterproject\obj\Debug\net8.0\SemesterProject.sourcelink.json
