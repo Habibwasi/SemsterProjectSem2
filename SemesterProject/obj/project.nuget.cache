@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2YtHZ8zulgV86wMu+jKWfbBdP/PwmQibfaBQzz+q95+xKBn9uwj4u8OxCIkX8ZzFeDygi8oTr+CIzUTjUgc0JQ==",
+  "dgSpecHash": "PUpJktX8Z5HJ9bj1el+FAm2IRLsE3/sKxE8hJ2RD9UyhtQ/YZe6gqOfGoX+FGfcp9P2k7mHLetCBGdoTK2fiCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\OneDrive\\Desktop\\carti\\Sem2\\SP\\SemesterProjectSem2\\semesterproject\\SemesterProject.csproj",
+  "projectFilePath": "C:\\Users\\asus\\OneDrive\\Desktop\\carti\\Sem2\\SP\\SemesterProjectSem2\\SemesterProject\\SemesterProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
