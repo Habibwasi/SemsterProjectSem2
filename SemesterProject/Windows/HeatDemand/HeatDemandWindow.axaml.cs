@@ -7,6 +7,7 @@ using Avalonia.Diagnostics;
 using Avalonia.Interactivity;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
+using System.IO;
 
 namespace SemesterProject.Views
 {
@@ -18,11 +19,26 @@ namespace SemesterProject.Views
             InitializeComponent();
             this.AttachDevTools();
         }
+
+        public void DisplayCSVContent()
+        {
+            string csvFilePath = "data.csv";
+            if (!File.Exists(csvFilePath))
+            {
+                Console.WriteLine("CSV file does not exist.");
+                return;
+            }
+            SourceDataManager.CSVContent(csvFilePath);
+        }
+        
+
         public void HourButtonCommand(object sender, RoutedEventArgs args)
         {
             if (HourButton.IsChecked == true)
             {
+                Console.WriteLine("IGOThere");
                 //HourGraph display
+                DisplayCSVContent();
                 DayButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false; YearButton.IsChecked = false; MaxButton.IsChecked = false;
             }
         }
