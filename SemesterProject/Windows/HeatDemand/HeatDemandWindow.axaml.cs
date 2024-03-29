@@ -1,13 +1,15 @@
-using Avalonia;
 using System;
+using Avalonia;
+using System.IO;
 using Avalonia.Media;
+using Avalonia.Logging;
 using Avalonia.Controls;
+using System.Diagnostics;
 using Avalonia.Markup.Xaml;
 using Avalonia.Diagnostics;
 using Avalonia.Interactivity;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
-using System.IO;
 
 namespace SemesterProject.Views
 {
@@ -22,21 +24,15 @@ namespace SemesterProject.Views
 
         public void DisplayCSVContent()
         {
-            string csvFilePath = "data.csv";
-            if (!File.Exists(csvFilePath))
-            {
-                Console.WriteLine("CSV file does not exist.");
-                return;
-            }
-            SourceDataManager.CSVContent(csvFilePath);
+            string csvFilePath = "C:\\Users\\asus\\OneDrive\\Desktop\\carti\\Sem2\\SP\\SemesterProjectSem2\\SemesterProject\\SourceDataManager\\data.csv";
+            SourceDataManager.CSVContentRead(csvFilePath);
         }
-        
+
 
         public void HourButtonCommand(object sender, RoutedEventArgs args)
         {
             if (HourButton.IsChecked == true)
             {
-                Console.WriteLine("IGOThere");
                 //HourGraph display
                 DisplayCSVContent();
                 DayButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false; YearButton.IsChecked = false; MaxButton.IsChecked = false;
