@@ -24,7 +24,7 @@ namespace SemesterProject.Views
 
         public void DisplayCSVContent()
         {
-            string csvFilePath = "C:\\Users\\asus\\OneDrive\\Desktop\\carti\\Sem2\\SP\\SemesterProjectSem2\\SemesterProject\\SourceDataManager\\data.csv";
+            var csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SourceDataManager\\data.csv");
             SourceDataManager.CSVContentRead(csvFilePath);
         }
 

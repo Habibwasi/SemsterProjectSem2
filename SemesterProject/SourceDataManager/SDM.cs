@@ -8,22 +8,13 @@ namespace SemesterProject.Views
     {
         public static void CSVContentRead(string filePath)
         {
-            string[] lines = File.ReadAllLines(filePath);
             string[][] data =
             [
                 ["01/02/2004","20:00"],
-                ["01/04/2004","22:00"]
+                ["6/12/9696 23:00,6/12/9696 0:00,6.35,1055.68,,7/14/2023 23:00,7/15/2023 0:00,1.62,607.05"]
             ];
             WriteToCSV(filePath,data);
         }
-        /*
-        ****************DATA EXAMPLE**************
-        string[][] data = new string[][]
-        {
-            new string[] {"01/02/2004","20:00"};
-            new string[] {"01/04/2004","22:00"};
-        };
-        */
         public static void WriteToCSV(string filePath, string[][] data)
         {
             
