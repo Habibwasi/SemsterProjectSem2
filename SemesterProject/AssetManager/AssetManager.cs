@@ -37,6 +37,6 @@ public class AssetManager
             if (unit.Name == name)
             return unit;
         }
-        return null;
+        return new ProductionUnit("", 0, 0, 0, 0, "");
     }
 }
