@@ -1,0 +1,11 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AssetManager"
+        Title="MainWindow" Width="800" Height="600"
+		x:Class="AssetManager.Views.MainWindow">
+	<StackPanel>
+		<TextBlock Text="Production Units:" Margin="10"/>
+		<ListBox x:Name="ProductionUnitsListBox" Margin="10"/>
+
+	</StackPanel>
+</Window>
