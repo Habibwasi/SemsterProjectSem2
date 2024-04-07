@@ -21,7 +21,6 @@ namespace SemesterProject.Views
             InitializeComponent();
             this.AttachDevTools();
         }
-        private Window _previousWindow;
         public void DisplayCSVContent()
         {
             var csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SourceDataManager\\data.csv");
