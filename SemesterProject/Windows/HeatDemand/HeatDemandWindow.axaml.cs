@@ -27,35 +27,28 @@ namespace SemesterProject.Views
             var csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SourceDataManager\\data.csv");
             SourceDataManager.CSVContentRead(csvFilePath);
         }
-        private void ClosePreviousWindow()
-        {
-           if(_previousWindow !=null)
-           {
-            _previousWindow.Close();
-           }
-        }
 
 
         public void HourButtonCommand(object sender, RoutedEventArgs args)
         {
             if (HourButton.IsChecked == true)
             {
-                ClosePreviousWindow();
+       
                 //HourGraph display
                 DisplayCSVContent();
                 DayButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false;   MaxButton.IsChecked = false;
-                _previousWindow = this;
+             
             }
         }
         public void DayButtonCommand(object sender, RoutedEventArgs args)
         {
             if (DayButton.IsChecked == true)
             {
-                ClosePreviousWindow();
+               
                 //DayGraph display
                 DisplayCSVContent();
                 HourButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false;   MaxButton.IsChecked = false;
-                _previousWindow = this; 
+              
             }
 
         }
@@ -63,22 +56,22 @@ namespace SemesterProject.Views
         {
             if (WeekButton.IsChecked == true)
             {
-                ClosePreviousWindow();
+               
                 //WeekGraph display
                 DisplayCSVContent();
                 HourButton.IsChecked = false; DayButton.IsChecked = false; MonthButton.IsChecked = false;   MaxButton.IsChecked = false;
-                _previousWindow = this;
+               
             }
         }
         public void MonthButtonCommand(object sender, RoutedEventArgs args)
         {
             if (MonthButton.IsChecked == true)
             {
-                ClosePreviousWindow();
+               
                 //MonthGraph display
                 DisplayCSVContent();
                 HourButton.IsChecked = false; DayButton.IsChecked = false; WeekButton.IsChecked = false;   MaxButton.IsChecked = false;
-                _previousWindow = this;
+              
             }
         }
         public void MaxButtonCommand(object sender, RoutedEventArgs args)
@@ -86,11 +79,11 @@ namespace SemesterProject.Views
 
             if (MaxButton.IsChecked == true)
             {
-                ClosePreviousWindow();
+                
                 //MaxGraph display
                 DisplayCSVContent();
                 HourButton.IsChecked = false; DayButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false;  
-                _previousWindow = this;
+              
             }
         }
     }
