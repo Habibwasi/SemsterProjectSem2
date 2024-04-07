@@ -14,7 +14,12 @@ namespace SemesterProject.Views
         public static void CSVContentRead(string filePath)
         {
             // Read from the CSV file
-            string[][] data;
+            string[][] data = 
+            [
+                [""],//left empty for new row to be placed
+                ["2/14/2023 2:00,2/14/2023 3:00,6.32,984.39,,7/14/2023 2:00,7/14/2023 3:00,1.66,634.13    NEWLINE"],
+                ["2/14/2023 23:00,2/15/2023 0:00,6.35,1055.68,,7/14/2023 23:00,7/15/2023 0:00,1.62,607.05 NEWLINE"]
+            ];
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string[] lines = reader.ReadToEnd().Split(Environment.NewLine);
@@ -24,47 +29,9 @@ namespace SemesterProject.Views
                     data[i] = lines[i].Split(",");
                 }
             }
-
-            // Extract and display specific columns from the data
-            DisplaySelectedColumns(data, new int[] { 0, 1, 5, 6 });
-        }
-
-        private static void DisplaySelectedColumns(string[][] data, int[] columns)
-        {
-            if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
-            {
-                // Create a ListBox to display the data
-                ListBox listBox = new ListBox();
-
-                // Add selected columns from each row of data to the ListBox
-                foreach (string[] row in data)
-                {
-                    string rowData = "";
-                    foreach (int column in columns)
-                    {
-                        if (column >= 0 && column < row.Length)
-                        {
-                            rowData += row[column] + ", ";
-                        }
-                    }
-
-                    TextBlock textBlock = new TextBlock();
-                    textBlock.Text = rowData.TrimEnd(',', ' '); // Trim the trailing comma and space
-                    textBlock.Foreground = Brushes.Black; // Set text color
-
-                    listBox.Items.Add(textBlock);
-                }
-
-                // Create a window to host the ListBox
-                Window window = new Window();
-                window.Width = 400;
-                window.Height = 300;
-                window.Content = listBox;
-
-                // Show the window
-                desktop.MainWindow = window;
-                desktop.MainWindow.Show();
-            }
+            //string[] lines = File.ReadAllLines(filePath);
+            var csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "SourceDataManager\\newfile.csv");
+            AppendToCSV(csvFilePath, data);
         }
 
         public static void AppendToCSV(string filePath, string[][] data)

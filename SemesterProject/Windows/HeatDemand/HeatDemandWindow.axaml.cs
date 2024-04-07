@@ -33,9 +33,11 @@ namespace SemesterProject.Views
         {
             if (HourButton.IsChecked == true)
             {
-       
+                string[] data= [];
+                data=["1","2","3"];
                 //HourGraph display
                 DisplayCSVContent();
+                graphSettings.Text=data[0];
                 DayButton.IsChecked = false; WeekButton.IsChecked = false; MonthButton.IsChecked = false;   MaxButton.IsChecked = false;
              
             }
