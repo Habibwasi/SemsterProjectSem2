@@ -28,7 +28,7 @@
 					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Heat Demand</TextBlock>
 				</Border>
 				<Border Background="DarkGray" CornerRadius="10" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="10">
-					<TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center">GRAPH?!?!?!</TextBlock>
+					<TextBlock x:Name="graphSettings" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center">GRAPH?!?!?!</TextBlock>
 				</Border>
 				<Border Background="White" CornerRadius="10" Grid.Row="2" Grid.Column="0" Margin="10">
 					<Grid ShowGridLines="False">
