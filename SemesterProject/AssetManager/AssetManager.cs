@@ -1,5 +1,6 @@
 using System;
 using System.Data;
+using SemesterProject;
 public class AssetManager
 {
     public class ProductionUnit
@@ -22,17 +23,9 @@ public class AssetManager
         }
     }
 
-    public static ProductionUnit[] ProductionUnits = new ProductionUnit[]
-    {
-        new ProductionUnit("GB", 5.0, 0, 500, 215, "gas"),
-        new ProductionUnit("OB", 4.0, 0, 700, 265, "oil"),
-        new ProductionUnit("GM", 3.6, 2.7, 1100, 640, "gas"),
-        new ProductionUnit("EK", 8.0, -8.0, 50, 0, "electricity"),
-    };
-
     public static ProductionUnit GetProductionUnit(string name)
     {
-        foreach (var unit in ProductionUnits)
+        foreach (var unit in ReadFile.productionUnits)
         {
             if (unit.Name == name)
             return unit;
